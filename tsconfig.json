@@ -2,8 +2,10 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@/access/*": ["access/*"],
-      "@/components/*": ["components/*"]
+      "@/pages/*": ["src/pages/*"],
+      "@/access/*": ["src/access/*"],
+      "@/components/*": ["src/components/*"],
+      "@/tests/*": ["src/tests/*"]
     },
     "target": "es5",
     "lib": [

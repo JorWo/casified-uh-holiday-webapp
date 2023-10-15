@@ -5,9 +5,9 @@ const { compilerOptions } = require('./tsconfig');
 module.exports = {
     rootDir: './',
     collectCoverageFrom: [
-        './**/*.ts*',
+        'src/**/*.ts*',
     ],
-    coverageReporters: ['json-summary'],
+    coverageReporters: ['html', 'json-summary', "text"],
     testEnvironment: 'jsdom',
     transform: {
         '^.+\\.tsx?$': [
@@ -18,7 +18,7 @@ module.exports = {
     },
     setupFilesAfterEnv: [
         '@testing-library/jest-dom/extend-expect',
-        '<rootDir>/tests/setupJest.ts',
+        '<rootDir>/src/tests/setupJest.ts',
     ],
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
     moduleDirectories: ["node_modules", "<rootDir>/"],

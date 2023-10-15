@@ -20,12 +20,10 @@ jobs:
 
       - name: Installing dependencies
         run: |
-          cd app
           npm install
 
       - name: Tests
         run: |
-          cd app
           npm run test:coverage
 
       - name: Switch to badges branch
@@ -35,7 +33,7 @@ jobs:
         uses: jpb06/jest-badges-action@latest
         with:
           branches: '*'
-          coverage-summary-path: app/coverage/coverage-summary.json
+          coverage-summary-path: coverage/coverage-summary.json
           no-commit: true
           target-branch: badges
 
