@@ -1,6 +1,6 @@
-import withSessionRouteHandler, { handler } from 'pages/api/cas/logout';
+import withSessionRouteHandler, { handler } from '@/pages/api/cas/logout';
 import { createMocks } from 'node-mocks-http';
-import { ApiRequest, ApiResponse } from 'tests/setupJest';
+import { ApiRequest, ApiResponse } from '@/tests/setupJest';
 import User from '@/access/User';
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL as string;

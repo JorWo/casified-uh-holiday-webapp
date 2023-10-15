@@ -25,15 +25,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd app
           npm install
 
       - name: Run ESLint
         run: |
-          cd app
           npm run lint
         
       - name: Run Jest Tests
         run: |
-          cd app
           npm run test

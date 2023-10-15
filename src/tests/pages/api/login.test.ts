@@ -1,6 +1,6 @@
-import withSessionRouteHandler, { handler } from 'pages/api/cas/login';
+import withSessionRouteHandler, { handler } from '@/pages/api/cas/login';
 import { createMocks } from 'node-mocks-http';
-import { ApiRequest, ApiResponse } from 'tests/setupJest';
+import { ApiRequest, ApiResponse } from '@/tests/setupJest';
 import User, { AnonymousUser } from '@/access/User';
 import Role from '@/access/Role';
 
