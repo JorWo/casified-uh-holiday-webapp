@@ -1,0 +1,10 @@
+*/.vscode
+*/.idea
+
+*/.next
+*/coverage
+*/node_modules
+*/target
+
+**/package-lock.json
+**/.env.local

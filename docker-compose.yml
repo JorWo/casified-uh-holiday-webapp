@@ -1,0 +1,15 @@
+services:
+  ui:
+    container_name: casified-uh-holiday-webapp-ui
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - 8080:8080
+    env_file: ../../.$USERNAME-conf/casified-uh-holiday-webapp-overrides.properties
+
+  api:
+    container_name: casified-uh-holiday-webapp-api
+    build:
+      dockerfile: ./api/Dockerfile
+    ports:
+      - 8081:8081
